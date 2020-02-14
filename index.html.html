@@ -1,0 +1,57 @@
+<!--Brandon Sin 30012020 Seng 513-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link href = "style.css" rel= "stylesheet" >
+    <script src= "cal.js" rel="javascript"></script>
+</head>
+<body>
+    <div class = "calculator">
+        <table>
+            <tr>
+                <td>
+                <!-- top row for answer and bottom row for numbers -->
+                    <input id = "answer">
+                    <input id = "input" placeholder ="0">
+                   
+                </td>
+            </tr>
+            <!--Buttons-->
+            <tr>
+                <td>
+                <!-- top row buttons -->
+                    <input type = "button" value = "(" onclick = "getBracket('(')">
+                    <input type = "button" value = ")" onclick = "getBracket(')')">
+                    <input type = "button" value = "CE" onclick = "clear_entry()">
+                    <input type = "button" value = "C" onclick = "clearAll()">
+                    <br>
+                    <!-- second row buttons -->
+                    <input type = "button" value = "7" onclick = "getNumber(7)">
+                    <input type = "button" value = "8" onclick = "getNumber(8)">
+                    <input type = "button" value = "9" onclick = "getNumber(9)">
+                    <input type = "button" value = "÷" onclick = "getOperand('÷')">
+                    <br>
+                    <!-- third row buttons -->
+                    <input type = "button" value = "4" onclick = "getNumber(4)">
+                    <input type = "button" value = "5" onclick = "getNumber(5)">
+                    <input type = "button" value = "6" onclick = "getNumber(6)">
+                    <input type = "button" value = "x" onclick = "getOperand('x')">
+                    <br>
+                    <!-- fourth row buttons -->
+                    <input type = "button" value = "1" onclick = "getNumber(1)">
+                    <input type = "button" value = "2" onclick = "getNumber(2)">
+                    <input type = "button" value = "3" onclick = "getNumber(3)">
+                    <input type = "button" value = "-" onclick = "getOperand('-')">
+                    <br>
+                    <!-- fifth row buttons -->
+                    <input type = "button" value = "0" onclick = "getNumber(0)">
+                    <input type = "button" value = "." onclick = "getDecimal('.')">
+                    <input type = "button" value = "=" onclick = "equal()">
+                    <input type = "button" value = "+" onclick = "getOperand('+')">
+                </td>
+
+            </tr>
+      </table>
+    </div>
+</body>
+</html>
